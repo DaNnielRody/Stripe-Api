@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResponseDto {
+public class Response {
     private String id;
-    private String clientKey;
+    private String clientSecret;
 }
