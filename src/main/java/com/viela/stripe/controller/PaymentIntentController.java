@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PaymentIntentController {
 
+    @PostMapping("/create-payment-intent")
     public ResponseEntity<Response> createPaymentIntent(@RequestBody Request request) {
         try {
             PaymentIntentCreateParams params = PaymentIntentCreateParams.builder()
