@@ -42,7 +42,7 @@ async function initialize() {
         theme: 'stripe',
     };
 
-    elements = stripe.elements({ appearance });
+    elements = stripe.elements({ clientSecret,appearance });
 
     const linkAuthenticationElement = elements.create("linkAuthentication");
     linkAuthenticationElement.mount("#link-authentication-element");
